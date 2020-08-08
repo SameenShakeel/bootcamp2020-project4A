@@ -29,62 +29,66 @@ img {
     transform: translateX(100%);
 }
   
-#palm3 {
-    top: 0; left: 10%;
+#tree1 {
+    top: 10%; left: 10%;
+    height: 400px;
 }
   
-#w_rook_upright {
-    top: 30%; left: 75%;
+#rock_upright {
+    top: 45%; left: 75%;
+    height: 200px;
 }
   
-#r_pawn {
-    top: 10%; left: 15%    
+#rock {
+    top: 10%; left: 15%;
+    height: 100px;
 }
   
-#w_rook {
-    top: 10%; left: 80%    
+#rocks {
+    top: 10%; left: 80%;
+    height: 100px;
 }
   
-#r_pawn_upright {
-    top: 5%; left: 30%    
+#rock2_upright {
+    top: 5%; left: 28%;
+    height: 115px;
 }
   
-#r_knight {
-    top: 0; left: 70%    
+#tree3 {
+  top: -15%; left: 90%;
+  height: 290px;
 }
   
-#palm2 {
-  top: -15%; left: 90%    
-}
-  
-#palm1 {
-    top: -15%; left: 40%    
+#tree2 {
+    top: -12%; left: 40%;
+    height: 200px; 
 }
   
 #bush {
-    top: 55%; left: 20%    
+    top: 45%; left: 20%;
+    height: 90px;
 }
 
-#red-queen_and_alice {
+#cube {
     position: absolute;
-    top: 0; left: 50%;
+    top: 30%; left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
-    width: 80%;
-    max-width: 450px;
+    width: 200px;
+    height: 160px;
     z-index: 1;
 }
   
- #red-queen_and_alice:before {
+ #cube:before {
     content: " ";
     display: block;
     padding-top: 87%;
 }
   
-#red-queen_and_alice img {
+#cube img {
     position: absolute;
     top: 0; left: 0;
-    width: 100%;  
+    width: 100%;
 }
   
 .sky, .earth {
@@ -93,8 +97,15 @@ img {
     height: 50vh;
     width: 100%;
 }
+
+#mountain {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
 .earth{
-    background: #eb125d url( "https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_earth.jpg") repeat-x 0 0 /  100% auto;
+    background: url( "/images/grass.png") repeat-x 0 0 /  100% auto;
     bottom: 0;
 }
 
@@ -103,4 +114,26 @@ img {
     top: 0;
 }
 
+.buttons{
+    position: absolute;
+    top: 10%; left: 5%;
+    z-index: 1;
+}
 
+#btn {
+    height: 40px; 
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #3498db; 
+    background-color: transparent;
+    margin: 10px;
+    color: #3498db; 
+    font-size: 1em; 
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+#btn:hover {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
